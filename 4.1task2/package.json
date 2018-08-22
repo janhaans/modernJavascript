@@ -1,0 +1,14 @@
+{
+  "name": "4.1task2",
+  "version": "1.0.0",
+  "description": "Check for emptiness",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jan Haans",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
+}
