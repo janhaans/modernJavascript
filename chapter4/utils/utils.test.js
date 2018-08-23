@@ -26,3 +26,17 @@ describe('Sum of object properties', () => {
         expect(utils.sum({})).toEqual(0);
     });
 });
+
+describe('Multiply numeric properties by 2', () => {
+    test('test1', () => {
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "my menu"
+        };
+        utils.multiplyNumeric(menu);
+        expect(menu.width).toEqual(400);
+        expect(menu.height).toEqual(600);
+        expect(menu.title).toMatch(/my menu/);
+    })
+});

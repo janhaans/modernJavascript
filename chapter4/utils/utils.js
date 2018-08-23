@@ -8,3 +8,9 @@ module.exports.sum = (obj) => {
 
     return (values.length === 0) ? 0 : values.reduce(reducer, 0);
 };
+
+module.exports.multiplyNumeric = (obj) => {
+    for (let [key, value] of Object.entries(obj)) {
+        if (typeof(value) === "number") { obj[key] = value*2; }
+    }
+};
