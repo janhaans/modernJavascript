@@ -1,0 +1,17 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Simple calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jan Haans",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.1.6"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
+}
