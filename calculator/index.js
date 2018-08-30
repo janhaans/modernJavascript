@@ -2,6 +2,7 @@
 
 const utils = require('./utils/utils');
 
-utils.calculator.read();
-console.log(`Sum = ${utils.calculator.sum()}`);
-console.log(`Multiply = ${utils.calculator.mul()}`);
+let calculator = new utils.Calculator();
+calculator.read();
+console.log(`Sum = ${calculator.sum()}`);
+console.log(`Multiply = ${calculator.mul()}`);

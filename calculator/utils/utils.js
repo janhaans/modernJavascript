@@ -2,20 +2,23 @@
 
 const prompt = require('prompt-sync')();
 
-let calculator ={};
+function Calculator() {
+    this.number1 = 0;
+    this.number2 = 0;
 
-calculator.read = function() {
-    this.number1 = Number(prompt('Give number 1: '));
-    this.number2 = Number(prompt('Give number 2: '));
+    this.read = function() {
+        this.number1 = Number(prompt('Give number 1: '));
+        this.number2 = Number(prompt('Give number 2: '));
+    };
+
+    this.sum = function() {
+        return this.number1 + this.number2;
+    };
+    
+    this.mul = function() {
+        return this.number1*this.number2;
+    };
 };
 
-calculator.sum = function() {
-    return this.number1 + this.number2;
-};
 
-calculator.mul = function() {
-    return this.number1*this.number2;
-}
-
-module.exports.calculator = calculator;
-
+module.exports.Calculator = Calculator;
